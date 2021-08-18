@@ -23,6 +23,8 @@ DDH2ext requires the requests module.
 
 ````
 # ddh uses the requests module and returns the same results as requests.get
-response = ddh2.get('ddhxext/DatasetView)
+import ddh2ext
+ddh2 = ddh2ext.DDH2()
+response = ddh2.get_datasets_list()
 print(response.json())
 ````
